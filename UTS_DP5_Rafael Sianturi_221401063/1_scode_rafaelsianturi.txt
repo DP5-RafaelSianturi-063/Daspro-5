@@ -1,0 +1,31 @@
+uses crt;
+Label a;
+var 
+  nama, waktu : string;
+
+begin
+  a :
+  clrscr;
+  write('Masukkan nama    : '); readln(nama);
+  write('Masukkan waktu   : '); readln(waktu);
+  clrscr;
+  if (waktu ='pagi') OR (waktu ='siang') OR (waktu= 'malam') then
+  begin
+    writeln('S');
+    writeln('E');
+    writeln('L');
+    writeln('A');
+    writeln('M');
+    writeln('A');
+    writeln('T');
+    writeln('', waktu);
+    write('', nama);
+    readln;
+  end
+  else
+    begin
+      write('Bukan termasuk waktu (pagi/siang/malam)');
+      readln;
+    end;
+    goto a;
+end.
